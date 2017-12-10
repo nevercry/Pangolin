@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0E93401FDA8F5300D08A00 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFAED5C11FD82B6700696999 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DF1433E81FD677190030558E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1433E71FD677190030558E /* main.m */; };
 		DF1433EB1FD677190030558E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1433EA1FD677190030558E /* AppDelegate.m */; };
 		DF1433EE1FD677190030558E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1433ED1FD677190030558E /* ViewController.m */; };
@@ -15,9 +16,24 @@
 		DF1433F61FD677190030558E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1433F41FD677190030558E /* LaunchScreen.storyboard */; };
 		DF1434011FD677190030558E /* PangolinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1434001FD677190030558E /* PangolinTests.m */; };
 		DF14340C1FD677190030558E /* PangolinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF14340B1FD677190030558E /* PangolinUITests.m */; };
+		DFA352421FD9296C00209D75 /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA352411FD9296C00209D75 /* util.m */; };
+		DFA352451FD998C000209D75 /* ClientTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA352441FD998C000209D75 /* ClientTunnel.m */; };
+		DFA352481FD9BB0700209D75 /* ClientTunnelConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA352471FD9BB0600209D75 /* ClientTunnelConnection.m */; };
+		DFA3524B1FDA6EBB00209D75 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA3524A1FDA6EBB00209D75 /* NetworkExtension.framework */; };
+		DFA3524C1FDA7A4900209D75 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA3524A1FDA6EBB00209D75 /* NetworkExtension.framework */; };
+		DFAED5C51FD82B6800696999 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAED5C41FD82B6800696999 /* PacketTunnelProvider.m */; };
+		DFAED5D01FD85CD400696999 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAED5CF1FD85CD400696999 /* Connection.m */; };
+		DFAED5D31FD86B3400696999 /* Tunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAED5D21FD86B3400696999 /* Tunnel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DF0E93411FDA8F5300D08A00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF1433DB1FD677190030558E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFAED5C01FD82B6700696999;
+			remoteInfo = PacketTunnel;
+		};
 		DF1433FD1FD677190030558E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF1433DB1FD677190030558E /* Project object */;
@@ -33,6 +49,20 @@
 			remoteInfo = Pangolin;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF0E93431FDA8F5300D08A00 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DF0E93401FDA8F5300D08A00 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DF1433E31FD677190030558E /* Pangolin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pangolin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +81,23 @@
 		DF1434071FD677190030558E /* PangolinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PangolinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF14340B1FD677190030558E /* PangolinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PangolinUITests.m; sourceTree = "<group>"; };
 		DF14340D1FD677190030558E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF14341C1FD677AF0030558E /* Pangolin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pangolin.entitlements; sourceTree = "<group>"; };
+		DFA352401FD9296C00209D75 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		DFA352411FD9296C00209D75 /* util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = util.m; sourceTree = "<group>"; };
+		DFA352431FD998C000209D75 /* ClientTunnel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientTunnel.h; sourceTree = "<group>"; };
+		DFA352441FD998C000209D75 /* ClientTunnel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientTunnel.m; sourceTree = "<group>"; };
+		DFA352461FD9BB0600209D75 /* ClientTunnelConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientTunnelConnection.h; sourceTree = "<group>"; };
+		DFA352471FD9BB0600209D75 /* ClientTunnelConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientTunnelConnection.m; sourceTree = "<group>"; };
+		DFA3524A1FDA6EBB00209D75 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		DFAED5C11FD82B6700696999 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAED5C31FD82B6800696999 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		DFAED5C41FD82B6800696999 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		DFAED5C61FD82B6800696999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAED5C71FD82B6800696999 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		DFAED5CE1FD85CD400696999 /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		DFAED5CF1FD85CD400696999 /* Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		DFAED5D11FD86B3400696999 /* Tunnel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tunnel.h; sourceTree = "<group>"; };
+		DFAED5D21FD86B3400696999 /* Tunnel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tunnel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA3524B1FDA6EBB00209D75 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +123,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFAED5BE1FD82B6700696999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA3524C1FDA7A4900209D75 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +140,9 @@
 				DF1433E51FD677190030558E /* Pangolin */,
 				DF1433FF1FD677190030558E /* PangolinTests */,
 				DF14340A1FD677190030558E /* PangolinUITests */,
+				DFAED5C21FD82B6800696999 /* PacketTunnel */,
 				DF1433E41FD677190030558E /* Products */,
+				DF1434191FD677AF0030558E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +152,7 @@
 				DF1433E31FD677190030558E /* Pangolin.app */,
 				DF1433FC1FD677190030558E /* PangolinTests.xctest */,
 				DF1434071FD677190030558E /* PangolinUITests.xctest */,
+				DFAED5C11FD82B6700696999 /* PacketTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +160,7 @@
 		DF1433E51FD677190030558E /* Pangolin */ = {
 			isa = PBXGroup;
 			children = (
+				DF14341C1FD677AF0030558E /* Pangolin.entitlements */,
 				DF1433E91FD677190030558E /* AppDelegate.h */,
 				DF1433EA1FD677190030558E /* AppDelegate.m */,
 				DF1433EC1FD677190030558E /* ViewController.h */,
@@ -140,6 +200,35 @@
 			path = PangolinUITests;
 			sourceTree = "<group>";
 		};
+		DF1434191FD677AF0030558E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFA3524A1FDA6EBB00209D75 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFAED5C21FD82B6800696999 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				DFAED5C31FD82B6800696999 /* PacketTunnelProvider.h */,
+				DFAED5C41FD82B6800696999 /* PacketTunnelProvider.m */,
+				DFAED5C61FD82B6800696999 /* Info.plist */,
+				DFAED5C71FD82B6800696999 /* PacketTunnel.entitlements */,
+				DFAED5CE1FD85CD400696999 /* Connection.h */,
+				DFAED5CF1FD85CD400696999 /* Connection.m */,
+				DFAED5D11FD86B3400696999 /* Tunnel.h */,
+				DFAED5D21FD86B3400696999 /* Tunnel.m */,
+				DFA352401FD9296C00209D75 /* util.h */,
+				DFA352411FD9296C00209D75 /* util.m */,
+				DFA352431FD998C000209D75 /* ClientTunnel.h */,
+				DFA352441FD998C000209D75 /* ClientTunnel.m */,
+				DFA352461FD9BB0600209D75 /* ClientTunnelConnection.h */,
+				DFA352471FD9BB0600209D75 /* ClientTunnelConnection.m */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +239,12 @@
 				DF1433DF1FD677190030558E /* Sources */,
 				DF1433E01FD677190030558E /* Frameworks */,
 				DF1433E11FD677190030558E /* Resources */,
+				DF0E93431FDA8F5300D08A00 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DF0E93421FDA8F5300D08A00 /* PBXTargetDependency */,
 			);
 			name = Pangolin;
 			productName = Pangolin;
@@ -196,19 +287,47 @@
 			productReference = DF1434071FD677190030558E /* PangolinUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DFAED5C01FD82B6700696999 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFAED5CB1FD82B6800696999 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				DFAED5BD1FD82B6700696999 /* Sources */,
+				DFAED5BE1FD82B6700696999 /* Frameworks */,
+				DFAED5BF1FD82B6700696999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = DFAED5C11FD82B6700696999 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DF1433DB1FD677190030558E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Minivision;
 				TargetAttributes = {
 					DF1433E21FD677190030558E = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 3KCD2U837H;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DF1433FB1FD677190030558E = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -221,6 +340,16 @@
 						DevelopmentTeam = 3KCD2U837H;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DF1433E21FD677190030558E;
+					};
+					DFAED5C01FD82B6700696999 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 3KCD2U837H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -240,6 +369,7 @@
 				DF1433E21FD677190030558E /* Pangolin */,
 				DF1433FB1FD677190030558E /* PangolinTests */,
 				DF1434061FD677190030558E /* PangolinUITests */,
+				DFAED5C01FD82B6700696999 /* PacketTunnel */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +393,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DF1434051FD677190030558E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAED5BF1FD82B6700696999 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,9 +435,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFAED5BD1FD82B6700696999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAED5C51FD82B6800696999 /* PacketTunnelProvider.m in Sources */,
+				DFA352451FD998C000209D75 /* ClientTunnel.m in Sources */,
+				DFAED5D31FD86B3400696999 /* Tunnel.m in Sources */,
+				DFAED5D01FD85CD400696999 /* Connection.m in Sources */,
+				DFA352481FD9BB0700209D75 /* ClientTunnelConnection.m in Sources */,
+				DFA352421FD9296C00209D75 /* util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DF0E93421FDA8F5300D08A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFAED5C01FD82B6700696999 /* PacketTunnel */;
+			targetProxy = DF0E93411FDA8F5300D08A00 /* PBXContainerItemProxy */;
+		};
 		DF1433FE1FD677190030558E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DF1433E21FD677190030558E /* Pangolin */;
@@ -343,7 +498,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -351,7 +508,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -392,7 +553,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -400,7 +563,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -429,6 +596,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pangolin/Pangolin.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3KCD2U837H;
 				INFOPLIST_FILE = Pangolin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,6 +610,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pangolin/Pangolin.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3KCD2U837H;
 				INFOPLIST_FILE = Pangolin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -499,6 +670,58 @@
 			};
 			name = Release;
 		};
+		DFAED5CC1FD82B6800696999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KCD2U837H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.minivision.Pangolin.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFAED5CD1FD82B6800696999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KCD2U837H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.minivision.Pangolin.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +741,7 @@
 				DF1434121FD677190030558E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF1434131FD677190030558E /* Build configuration list for PBXNativeTarget "PangolinTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +750,7 @@
 				DF1434151FD677190030558E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF1434161FD677190030558E /* Build configuration list for PBXNativeTarget "PangolinUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +759,16 @@
 				DF1434181FD677190030558E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFAED5CB1FD82B6800696999 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAED5CC1FD82B6800696999 /* Debug */,
+				DFAED5CD1FD82B6800696999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
