@@ -81,14 +81,9 @@
                 NETunnelProviderManager *manager = [[NETunnelProviderManager alloc] init];
                 NETunnelProviderProtocol *protocol = [[NETunnelProviderProtocol alloc] init];
                 NEProxySettings *settings = [[NEProxySettings alloc] init];
-                settings.autoProxyConfigurationEnabled = YES;
-                settings.HTTPEnabled = YES;
-                settings.HTTPServer = [[NEProxyServer alloc] initWithAddress:@"192.168.190.54" port:1080];
-                settings.HTTPSEnabled = YES;
-                settings.HTTPSServer = [[NEProxyServer alloc] initWithAddress:@"192.168.190.54" port:1080];
                 
-                protocol.providerBundleIdentifier = @"cn.minivision.ios.TunnelProvider";    // bundle ID of tunnel provider
-                protocol.serverAddress = @"192.168.190.37:8999";        // VPN server address
+//                protocol.serverAddress = @"192.168.2.157:8999";        // VPN server address
+                protocol.serverAddress = @"192.168.190.37:8999";
                 protocol.proxySettings = settings; // HTTP proxy
                 manager.protocolConfiguration = protocol;
                 

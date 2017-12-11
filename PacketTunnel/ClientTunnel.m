@@ -27,7 +27,7 @@
     
     if (colonRange.location != NSNotFound) {
         NSString *hostName = [serverAddress substringWithRange:NSMakeRange(0, colonRange.location)];
-        NSString *portString = [serverAddress substringWithRange:NSMakeRange(colonRange.location + colonRange.length, serverAddress.length)];
+        NSString *portString = [serverAddress substringWithRange:NSMakeRange(colonRange.location + colonRange.length, serverAddress.length-(colonRange.location + colonRange.length))];
         
         if (hostName.length == 0 && portString.length == 0) {
             *error = [NSError errorWithDomain:@"SimpleTunnelError" code:STEBadConfiguration userInfo:nil];
