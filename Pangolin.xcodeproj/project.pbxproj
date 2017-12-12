@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF0E93401FDA8F5300D08A00 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFAED5C11FD82B6700696999 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF0E93501FDE2DF600D08A00 /* PALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0E934F1FDE2DF600D08A00 /* PALoginViewController.m */; };
 		DF1433E81FD677190030558E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1433E71FD677190030558E /* main.m */; };
 		DF1433EB1FD677190030558E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1433EA1FD677190030558E /* AppDelegate.m */; };
 		DF1433EE1FD677190030558E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1433ED1FD677190030558E /* ViewController.m */; };
@@ -65,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF0E934E1FDE2DF600D08A00 /* PALoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PALoginViewController.h; sourceTree = "<group>"; };
+		DF0E934F1FDE2DF600D08A00 /* PALoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PALoginViewController.m; sourceTree = "<group>"; };
 		DF1433E31FD677190030558E /* Pangolin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pangolin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1433E71FD677190030558E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF1433E91FD677190030558E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +137,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF0E93441FDE28C200D08A00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF0E93451FDE28DF00D08A00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DF0E93461FDE28ED00D08A00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E934E1FDE2DF600D08A00 /* PALoginViewController.h */,
+				DF0E934F1FDE2DF600D08A00 /* PALoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		DF1433DA1FD677190030558E = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +186,9 @@
 		DF1433E51FD677190030558E /* Pangolin */ = {
 			isa = PBXGroup;
 			children = (
+				DF0E93461FDE28ED00D08A00 /* Controllers */,
+				DF0E93451FDE28DF00D08A00 /* Models */,
+				DF0E93441FDE28C200D08A00 /* Views */,
 				DF14341C1FD677AF0030558E /* Pangolin.entitlements */,
 				DF1433E91FD677190030558E /* AppDelegate.h */,
 				DF1433EA1FD677190030558E /* AppDelegate.m */,
@@ -416,6 +445,7 @@
 				DF1433EE1FD677190030558E /* ViewController.m in Sources */,
 				DF1433EB1FD677190030558E /* AppDelegate.m in Sources */,
 				DF1433E81FD677190030558E /* main.m in Sources */,
+				DF0E93501FDE2DF600D08A00 /* PALoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
